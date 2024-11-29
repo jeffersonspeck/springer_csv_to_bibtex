@@ -19,7 +19,9 @@ pip install requests beautifulsoup4 tqdm
 ## How to Use
 
 ### Place CSV Files
-Place all `.csv` files to be processed in the same directory as the script.
+Place all `.csv` files to be processed in the same directory as the script. 
+
+The script will compare all entries across the provided CSV files, identify duplicates based on their DOI or a combination of title and authors, and ignore duplicate records to ensure only unique entries are processed.
 
 ### Run the Script
 Execute the script using the command below. You will be prompted to provide the desired output BibTeX file name:
@@ -28,6 +30,18 @@ python csv_to_bibtex.py
 ```
 ### BibTeX Output:
 The script will generate a BibTeX file in the same directory with the name you specify.
+
+### Example Console Output:
+
+```bash
+Processing the following CSV files:
+
+file1.csv
+file2.csv
+Total unique entries: 150 Total duplicates found: 20
+
+Enter the output file name (without extension, press Enter for default):
+```
 
 ### What Happens During the Process:
 The script will:
