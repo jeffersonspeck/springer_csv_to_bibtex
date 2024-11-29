@@ -1,4 +1,4 @@
-# CSV to BibTeX Converter
+# Springer CSV to BibTeX Converter
 
 ## Description
 This Python script processes multiple `.csv` files in the same directory, extracts metadata from online articles (if a valid URL is provided), and generates a single `.bib` file in the BibTeX format. The generated BibTeX file is enriched with metadata from the provided URLs, such as article title, abstract, pages, volume, issue, and more.
